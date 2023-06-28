@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Animation</title>
+ 
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script> -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Styling for the container */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    /* Styling for the input and animation container */
+    .input-container {
+      width: 40;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    /* Styling for the input box */
+    .input-box {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Styling for the confirm button */
+    .confirm-button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    /* Styling for the animation window */
+    .animation-window {
+      width: 60%;
+      height: 400px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="input-container">
+      <h1>Enter a Word</h1>
+      <input type="text" class="input-box" id="word-input" placeholder="Type a word">
+      <button class="confirm-button" onclick="displayAnimation()" id="cnfrm">Confirm</button>
+    </div>
+    <div class="animation-window" id="animation-container">
+      <!-- Animation will be displayed here -->
+      <!-- <model-viewer src="Familt(glTF)/Family.gltf" camera-controls auto-rotate></model-viewer> -->
+      
+      <!-- <model-viewer src="for_glTF/Helo_output.gltf" camera-controls auto-rotate></model-viewer> -->
+    </div>
+  </div>
+  <!-- <scipt src="aws1script.mjs"></scipt> -->
+  <script src="unrealWebSocket.js" type="module"></script>
+ <script src="streaming_purpose" ></script>
+  <!-- <script src="demo_three.js" type="module" ></script> -->
+  <!-- <script src="triggering_anim.js" type="module"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script> --> 
+  
+</body>
+</html>
